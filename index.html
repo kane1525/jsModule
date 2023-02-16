@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="sheduler">
+      <div class="events-wrapper">
+        <ul class="time-list"></ul>
+        <div class="events"></div>
+      </div>
+      <div class="controls">
+        <form class="form">
+          <div class="form-field">
+            <label for="start-time"> Start of Event (08:00 to 17:00): </label>
+            <input
+              id="start-time"
+              type="time"
+              name="appt-time"
+              min="08:00"
+              max="17:00"
+              value="08:00"
+            />
+            <span class="validity"></span>
+          </div>
+          <div class="form-field">
+            <label for="end-time"> End of Event (08:00 to 17:00): </label>
+            <input
+              id="end-time"
+              type="time"
+              name="appt-time"
+              min="08:00"
+              max="17:00"
+              value="17:00"
+            />
+            <span class="validity"></span>
+          </div>
+          <div class="form-field">
+            <label for="event-name"> Event name: </label>
+            <input
+              id="event-name"
+              type="text"
+              name="appt-time"
+              min="08:00"
+              max="17:00"
+            />
+          </div>
+          <input id="submit-btn" type="submit" value="add event" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
